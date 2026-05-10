@@ -5,6 +5,7 @@ import tsConfigPaths from "vite-tsconfig-paths";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/startup-setup/",
   plugins: [react(), tailwindcss(), tsConfigPaths()],
   build: {
     outDir: "dist/pages",

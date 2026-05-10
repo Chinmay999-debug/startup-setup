@@ -6,6 +6,7 @@ import { getRouter } from "./router";
 import "./styles.css";
 
 const root = document.getElementById("root");
+const pagesBasepath = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
 
 if (!root) {
   throw new Error("Root element not found.");
@@ -13,6 +14,6 @@ if (!root) {
 
 createRoot(root).render(
   <StrictMode>
-    <RouterProvider router={getRouter()} />
+    <RouterProvider router={getRouter(pagesBasepath)} />
   </StrictMode>,
 );

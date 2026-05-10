@@ -125,9 +125,9 @@ export function Footer() {
             © {new Date().getFullYear()} Startup Setup. All rights reserved.
           </div>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-xs text-muted-foreground">
-            <a href="/contact#support" className="transition-colors hover:text-foreground">
+            <Link to="/contact" hash="support" className="transition-colors hover:text-foreground">
               Support
-            </a>
+            </Link>
             <Link to="/privacy" className="transition-colors hover:text-foreground">
               Privacy
             </Link>
